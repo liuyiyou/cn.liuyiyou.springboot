@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ibalife.message.mapper.iba.UserDeliveryMapper">
+    <resultMap id="BaseResultMap" type="com.ibalife.message.model.UserDelivery">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="consignee" jdbcType="VARCHAR" property="consignee"/>
+    </resultMap>
+
+
+    <select id="getUserDeliveryById" parameterType="java.lang.Long" resultMap="BaseResultMap">
+         SELECT id,consignee FROM  user_delivery WHERE  id =#{id,jdbcType=BIGINT}
+    </select>
+
+
+    <insert id="insert" parameterType="com.ibalife.message.model.UserDelivery">
+        INSERT INTO user_delivery (id,consignee)
+        VALUES
+        (#{id,jdbcType=BIGINT},#{consignee,jdbcType=VARCHAR})
+    </insert>
+
+</mapper>

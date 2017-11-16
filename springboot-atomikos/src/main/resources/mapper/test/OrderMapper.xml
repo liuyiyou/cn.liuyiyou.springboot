@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ibalife.message.mapper.test.OrderMapper">
+    <resultMap id="BaseResultMap" type="com.ibalife.message.model.Order">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="worker_id" jdbcType="INTEGER" property="workerId"/>
+        <result column="order_name" jdbcType="VARCHAR" property="orderName"/>
+    </resultMap>
+
+
+    <insert id="insert" parameterType="com.ibalife.message.model.Order">
+        INSERT INTO  t_order (id,worker_id,order_name)
+        VALUES (#{id,jdbcType=INTEGER},#{workerId,jdbcType=INTEGER},#{orderName,jdbcType=VARCHAR})
+    </insert>
+
+</mapper>
