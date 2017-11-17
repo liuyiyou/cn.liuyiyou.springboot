@@ -1,8 +1,5 @@
-# 详细文档见
-[SpringBoot学习](http:/liuyiyou.cn/springboot)
-
 ## 一、项目结构
-「Spring Boot 那些事」：[传送门](http://www.bysocket.com/?page_id=1639 "Spring Boot 那些事")<br>
+[SpringBoot学习](http:/liuyiyou.cn/springboot)
 
 #### a. 『 基础 - 入门篇 』
 - springboot-helloworld<br>
