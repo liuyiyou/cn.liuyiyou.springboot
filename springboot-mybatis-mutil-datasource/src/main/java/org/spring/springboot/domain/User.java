@@ -3,7 +3,7 @@ package org.spring.springboot.domain;
 /**
  * 用户实体类
  *
- * Created by bysocket on 07/02/2017.
+ * Created by liuyiyou.cn on 07/02/2017.
  */
 public class User {
 

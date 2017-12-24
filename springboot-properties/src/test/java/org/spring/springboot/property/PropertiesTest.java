@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 /**
  * 自定义配置文件测试类
  * <p>
- * Created by bysocket on 17/04/2017.
+ * Created by liuyiyou.cn on 17/04/2017.
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest

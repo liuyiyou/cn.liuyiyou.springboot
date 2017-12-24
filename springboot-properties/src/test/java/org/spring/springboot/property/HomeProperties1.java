@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 /**
  * 家乡属性
  *
- * Created by bysocket on 17/04/2017.
+ * Created by liuyiyou.cn on 17/04/2017.
  */
 @Component
 public class HomeProperties1 {

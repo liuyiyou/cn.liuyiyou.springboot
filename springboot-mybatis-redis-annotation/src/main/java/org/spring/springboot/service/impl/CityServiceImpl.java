@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * 城市业务逻辑实现类
  * <p>
- * Created by bysocket on 07/02/2017.
+ * Created by liuyiyou.cn on 07/02/2017.
  */
 @Service
 public class CityServiceImpl implements CityService {

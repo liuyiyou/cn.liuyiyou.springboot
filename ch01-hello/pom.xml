@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.liuyiyou.springboot</groupId>
-    <artifactId>ch02-hello</artifactId>
+    <artifactId>ch01-hello</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-helloworld :: HelloWorld Demo</name>
 
@@ -21,12 +21,9 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-        <!-- Junit -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
     </dependencies>
 </project>

@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * ES 操作类
  * <p>
- * Created by bysocket on 20/06/2017.
+ * Created by liuyiyou.cn on 20/06/2017.
  */
 public interface CityRepository extends ElasticsearchRepository<City, Long> {
 

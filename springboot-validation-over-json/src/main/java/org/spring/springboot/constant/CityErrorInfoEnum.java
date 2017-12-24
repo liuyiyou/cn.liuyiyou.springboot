@@ -5,7 +5,7 @@ import org.spring.springboot.result.ErrorInfoInterface;
 /**
  * 业务错误码 案例
  *
- * Created by bysocket on 14/03/2017.
+ * Created by liuyiyou.cn on 14/03/2017.
  */
 public enum CityErrorInfoEnum implements ErrorInfoInterface {
     PARAMS_NO_COMPLETE("000001","params no complete"),

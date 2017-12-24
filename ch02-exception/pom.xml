@@ -20,7 +20,7 @@
 
         <dependency>
             <groupId>cn.liuyiyou.springboot</groupId>
-            <artifactId>ch00-common</artifactId>
+            <artifactId>springboot-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
