@@ -16,6 +16,7 @@
         <module>ch01-hello</module>
         <!--异常以及默认错误处理-->
         <module>ch02-exception</module>
+        <module>ch02-spring-boot-common</module>
         <!--Spring Boot值配置-->
         <module>ch03-configuration</module>
         <!-- Spring Boot 整合 Mybatis 的完整 Web 案例 -->
@@ -26,6 +27,10 @@
         <module>ch06-redis-default</module>
         <!--Spring Boot atomocis-->
         <module>ch07-jdbc-atomikos</module>
+        <module>ch08-aspect</module>
+        <module>ch09-spring-boot-jooq</module>
+        <module>ch10-spring-boot-securing</module>
+        <module>ch11-spring-boot-securing-login</module>
         <!-- Spring Boot 之配置文件详解 -->
         <module>springboot-properties</module>
         <!-- 基础 - Web 业务开发篇 -->
@@ -56,6 +61,7 @@
         <module>spring-data-elasticsearch-crud</module>
         <module>spring-data-elasticsearch-query</module>
         <module>swagger2</module>
+        <module>springboot-jedis</module>
     </modules>
 
 </project>
