@@ -6,13 +6,14 @@
     <groupId>cn.liuyiyou.springboot</groupId>
     <artifactId>ch01-hello</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-helloworld :: HelloWorld Demo</name>
+    <name>第一个SpringBoot应用</name>
 
     <!-- Spring Boot 启动父依赖 -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.8.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <dependencies>
@@ -24,6 +25,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>

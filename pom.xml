@@ -20,6 +20,8 @@
         <!--Spring Boot值配置-->
         <module>ch03-configuration</module>
         <!-- Spring Boot 整合 Mybatis 的完整 Web 案例 -->
+        <!-- Spring Boot 之配置文件详解 -->
+        <module>ch04-properties</module>
         <module>ch04-mybatis</module>
         <!-- Spring Boot 整合 Mybatis Annotation 注解案例 -->
         <module>ch05-mybatis-annotation</module>
@@ -31,8 +33,7 @@
         <module>ch09-spring-boot-jooq</module>
         <module>ch10-spring-boot-securing</module>
         <module>ch11-spring-boot-securing-login</module>
-        <!-- Spring Boot 之配置文件详解 -->
-        <module>springboot-properties</module>
+
         <!-- 基础 - Web 业务开发篇 -->
         <!-- Spring Boot 实现 Restful 服务，基于 HTTP / JSON 传输 -->
         <module>springboot-restful</module>
@@ -56,10 +57,6 @@
         <module>springboot-dubbo-server</module>
         <module>springboot-dubbo-client</module>
         <!-- Spring Boot 整合 Elasticsearch -->
-        <module>springboot-elasticsearch</module>
-        <!-- Spring Data ES 篇 -->
-        <module>spring-data-elasticsearch-crud</module>
-        <module>spring-data-elasticsearch-query</module>
         <module>swagger2</module>
         <module>springboot-jedis</module>
     </modules>
