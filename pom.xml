@@ -59,6 +59,7 @@
         <!-- Spring Boot 整合 Elasticsearch -->
         <module>swagger2</module>
         <module>springboot-jedis</module>
+        <module>ch20-rabbitmq</module>
     </modules>
 
 </project>

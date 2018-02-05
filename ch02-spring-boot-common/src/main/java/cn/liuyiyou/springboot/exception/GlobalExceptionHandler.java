@@ -1,10 +1,10 @@
 package cn.liuyiyou.springboot.exception;
 
+import cn.liuyiyou.springboot.result.Result;
 import cn.liuyiyou.springboot.result.ResultGenerator;
 import lombok.extern.slf4j.Slf4j;
 import org.spring.springboot.result.Result;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import javax.servlet.http.HttpServletRequest;
