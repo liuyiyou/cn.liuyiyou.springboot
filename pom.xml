@@ -11,8 +11,7 @@
     <modules>
 
         <!-- 基础 – 入门篇 -->
-        <module>ch01-helloworld</module>
-        <module>ch02-spring-boot-common</module>
+        <module>ch00-only-spring</module>
         <module>ch03-exception</module>
         <module>ch03-configuration</module>
         <module>ch04-properties</module>
@@ -50,7 +49,12 @@
         <!-- Spring Boot 整合 Elasticsearch -->
         <module>swagger2</module>
         <module>springboot-jedis</module>
+        <module>springboot-common</module>
         <module>ch20-rabbitmq</module>
+
+        <!--new-->
+        <module>springboot-greeting</module>
+        <module>springboot-controller</module>
     </modules>
 
 </project>
