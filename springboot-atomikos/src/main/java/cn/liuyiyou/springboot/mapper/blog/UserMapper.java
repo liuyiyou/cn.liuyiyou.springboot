@@ -1,6 +1,6 @@
-package com.ibalife.message.mapper.blog;
+package cn.liuyiyou.springboot.mapper.blog;
 
-import com.ibalife.message.model.User;
+import cn.liuyiyou.springboot.model.User;
 import org.springframework.stereotype.Repository;
 
 /**

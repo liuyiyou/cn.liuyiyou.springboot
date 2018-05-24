@@ -1,6 +1,6 @@
-package com.ibalife.message.mapper.test;
+package cn.liuyiyou.springboot.mapper.test;
 
-import com.ibalife.message.model.Order;
+import cn.liuyiyou.springboot.model.Order;
 import org.springframework.stereotype.Repository;
 
 /**

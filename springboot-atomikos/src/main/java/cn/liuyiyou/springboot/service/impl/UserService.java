@@ -1,12 +1,12 @@
-package com.ibalife.message.service.impl;
+package cn.liuyiyou.springboot.service.impl;
 
-import com.ibalife.message.mapper.blog.UserMapper;
-import com.ibalife.message.mapper.iba.UserDeliveryMapper;
-import com.ibalife.message.mapper.test.OrderMapper;
-import com.ibalife.message.model.Order;
-import com.ibalife.message.model.User;
-import com.ibalife.message.model.UserDelivery;
-import com.ibalife.message.service.IUserService;
+import cn.liuyiyou.springboot.mapper.blog.UserMapper;
+import cn.liuyiyou.springboot.mapper.iba.UserDeliveryMapper;
+import cn.liuyiyou.springboot.mapper.test.OrderMapper;
+import cn.liuyiyou.springboot.model.Order;
+import cn.liuyiyou.springboot.model.User;
+import cn.liuyiyou.springboot.model.UserDelivery;
+import cn.liuyiyou.springboot.service.IUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

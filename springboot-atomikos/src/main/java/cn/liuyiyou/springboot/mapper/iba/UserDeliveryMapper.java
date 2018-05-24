@@ -1,6 +1,7 @@
-package com.ibalife.message.mapper.iba;
+package cn.liuyiyou.springboot.mapper.iba;
 
-import com.ibalife.message.model.UserDelivery;
+
+import cn.liuyiyou.springboot.model.UserDelivery;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

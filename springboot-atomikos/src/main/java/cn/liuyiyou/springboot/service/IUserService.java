@@ -1,9 +1,9 @@
-package com.ibalife.message.service;
+package cn.liuyiyou.springboot.service;
 
 
-import com.ibalife.message.model.Order;
-import com.ibalife.message.model.User;
-import com.ibalife.message.model.UserDelivery;
+import cn.liuyiyou.springboot.model.Order;
+import cn.liuyiyou.springboot.model.User;
+import cn.liuyiyou.springboot.model.UserDelivery;
 
 /**
  * User: liuyiyou

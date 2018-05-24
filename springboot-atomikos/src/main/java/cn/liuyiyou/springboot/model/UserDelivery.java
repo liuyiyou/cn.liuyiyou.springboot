@@ -1,4 +1,4 @@
-package com.ibalife.message.model;
+package cn.liuyiyou.springboot.model;
 
 /**
  * User: liuyiyou
