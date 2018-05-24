@@ -1,4 +1,4 @@
-package cn.liuyiyou.springboot.web;
+package cn.liuyiyou.springboot.controller;
 
 import cn.liuyiyou.springboot.model.User;
 import io.swagger.annotations.ApiImplicitParam;
@@ -16,17 +16,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Spring Boot HelloWorld 案例
- * <p>
- * Created by liuyiyou.cn on 17/09/27.
- */
+
 @RestController
 @RequestMapping(value = "/users")     // 通过这里配置使下面的映射都在/users下，可去除
 public class UserController {
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
 
-    @ApiOperation(value = "获取用户列表", notes = "")
+    @ApiOperation(value = "获取用户列表", notes = "AAA")
     @RequestMapping(value = {""}, method = RequestMethod.GET)
     public List<User> getUserList() {
         List<User> r = new ArrayList<User>(users.values());
