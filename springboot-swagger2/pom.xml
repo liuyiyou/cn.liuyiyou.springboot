@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>SpringBoot学习：swagger2</name>
+	<name>SpringBoot学习第04章：集成swagger2</name>
 	<description>SpringBoot学习：swagger2</description>
 
 	<parent>

@@ -11,19 +11,6 @@
     <modules>
 
         <!-- 基础 – 入门篇 -->
-        <module>ch00-only-spring</module>
-        <module>ch03-exception</module>
-        <module>ch03-configuration</module>
-        <module>ch04-properties</module>
-        <module>ch04-mybatis</module>
-        <module>ch04-logback</module>
-        <module>ch05-mybatis-annotation</module>
-        <module>ch06-redis-default</module>
-        <module>ch07-jdbc-atomikos</module>
-        <module>ch08-aspect</module>
-        <module>ch09-spring-boot-jooq</module>
-        <module>ch10-spring-boot-securing</module>
-        <module>ch11-spring-boot-securing-login</module>
         <!-- 基础 - Web 业务开发篇 -->
         <!-- Spring Boot 实现 Restful 服务，基于 HTTP / JSON 传输 -->
         <module>springboot-restful</module>
@@ -37,24 +24,40 @@
         <!-- Spring Boot 整合 Redis 实现缓存 -->
         <module>springboot-mybatis-redis</module>
         <!-- Spring Boot 注解实现整合 Redis 实现缓存 -->
-        <module>springboot-mybatis-redis-annotation</module>
-        <module>springboot-atomikos</module>
+
         <!-- 基础 – 应用篇 -->
         <!-- Spring Boot Actuator 监控
         <module>springboot-actuator</module>-->
         <!-- 其他篇 -->
         <!-- Spring Boot 整合 Dubbo/ZooKeeper 详解 SOA 案例 -->
-        <module>springboot-dubbo-server</module>
-        <module>springboot-dubbo-client</module>
+
         <!-- Spring Boot 整合 Elasticsearch -->
-        <module>swagger2</module>
-        <module>springboot-jedis</module>
-        <module>springboot-common</module>
-        <module>ch20-rabbitmq</module>
 
         <!--new-->
+        <module>springboot-only-spring</module>
+        <module>springboot-jedis</module>
         <module>springboot-greeting</module>
         <module>springboot-controller</module>
+        <module>springboot-jdbc</module>
+        <module>springboot-configuration</module>
+        <module>springboot-properties</module>
+        <module>springboot-mybatis-annotation</module>
+        <module>springboot-mybatis-redis-annotation</module>
+        <module>springboot-jdbc-atomikos</module>
+        <module>springboot-jooq</module>
+        <module>springboot-securing</module>
+        <module>springboot-securing-login</module>
+        <module>springboot-redis</module>
+        <module>springboot-rabbitmq</module>
+        <module>springboot-aspect</module>
+        <module>springboot-exception</module>
+        <module>springboot-mybatis</module>
+        <module>springboot-pay</module>
+        <module>springboot-dubbo-server</module>
+        <module>springboot-dubbo-client</module>
+        <module>springboot-mybatis-mutil-datasource</module>
+        <module>springboot-atomikos</module>
+        <module>springboot-pay</module>
     </modules>
 
 </project>

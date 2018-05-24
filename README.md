@@ -1,8 +1,15 @@
 ## 一、项目结构
+
 [SpringBoot学习](http:/liuyiyou.cn/springboot)
 
 #### a. 『 基础 - 入门篇 』
-- springboot-helloworld<br>
+
+- springboot-greeting<br>
+    - 随机端口
+    
+- springboot-controller<br>
+    - 控制器，web
+
  [《Spring Boot 之 HelloWorld 详解》](http://liuyiyou.cn/?p=1124 "Spring Boot 之 HelloWorld详解")<br>
 - springboot-properties <br>
  [《Spring Boot 之配置文件详解》](http://liuyiyou.cn/?p=1786 "Spring Boot 之配置文件详解")<br>
