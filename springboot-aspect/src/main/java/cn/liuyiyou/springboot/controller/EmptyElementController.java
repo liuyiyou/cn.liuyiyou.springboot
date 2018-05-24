@@ -1,4 +1,4 @@
-package cn.liuyiyou.springboot.web;
+package cn.liuyiyou.springboot.controller;
 
 import cn.liuyiyou.springboot.vo.EmptyElementFilter;
 import cn.liuyiyou.springboot.vo.User;
