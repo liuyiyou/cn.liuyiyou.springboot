@@ -1,5 +1,3 @@
-logging:
-  level: info
-server:
-  port: ${random.int[10000,19999]}
-
+server.port: ${random.int[10000,19999]}
+spring.application.name: spring-greeting
+logging.level.root: INFO

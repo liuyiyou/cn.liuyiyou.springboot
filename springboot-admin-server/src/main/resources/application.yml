@@ -1,0 +1,18 @@
+
+spring:
+#  profiles: secure
+  security:
+    user:
+      name: "admin"
+      password: "admin"
+  boot:
+    admin:
+      client:
+        username: "admin"       #These two are needed so that the client
+        password: "admin"   #can register at the protected server api
+        instance:
+          metadata:
+            user.name: "admin"         #These two are needed so that the server
+            user.password: "admin"
+server:
+  port: 10001

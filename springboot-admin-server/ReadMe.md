@@ -1,0 +1,1 @@
+http://codecentric.github.io/spring-boot-admin/2.0.2/#spring-cloud-discovery-static-config

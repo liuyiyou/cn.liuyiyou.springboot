@@ -3,40 +3,40 @@
     <modelVersion>4.0.0</modelVersion>
     <name>springboot :: Examples</name>
 
+    <!-- Spring Boot 启动父依赖 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.4.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <groupId>cn.liuyiyou</groupId>
     <artifactId>cn.liuyiyou.springboot</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
 
     <modules>
 
-        <!-- 基础 – 入门篇 -->
-        <!-- 基础 - Web 业务开发篇 -->
-        <!-- Spring Boot 实现 Restful 服务，基于 HTTP / JSON 传输 -->
+        <module>springboot-greeting</module>
+
         <module>springboot-restful</module>
-        <!-- Spring Boot 集成 FreeMarker -->
         <module>springboot-freemarker</module>
-        <!-- Spring Boot HTTP over JSON 的错误码异常处理 -->
         <module>springboot-validation-over-json</module>
-        <!-- Spring Boot 整合 Mybatis 实现 Druid 多数据源配置 -->
         <module>springboot-mybatis-mutil-datasource</module>
-        <!-- 基础 – 数据缓存篇 -->
-        <!-- Spring Boot 整合 Redis 实现缓存 -->
         <module>springboot-mybatis-redis</module>
-        <!-- Spring Boot 注解实现整合 Redis 实现缓存 -->
-
-        <!-- 基础 – 应用篇 -->
-        <!-- Spring Boot Actuator 监控
-        <module>springboot-actuator</module>-->
-        <!-- 其他篇 -->
-        <!-- Spring Boot 整合 Dubbo/ZooKeeper 详解 SOA 案例 -->
-
-        <!-- Spring Boot 整合 Elasticsearch -->
-
-        <!--new-->
+        <module>springboot-atomikos</module>
         <module>springboot-only-spring</module>
         <module>springboot-jedis</module>
-        <module>springboot-greeting</module>
+        <module>springboot-common</module>
         <module>springboot-controller</module>
         <module>springboot-jdbc</module>
         <module>springboot-configuration</module>
@@ -58,6 +58,45 @@
         <module>springboot-mybatis-mutil-datasource</module>
         <module>springboot-atomikos</module>
         <module>springboot-pay</module>
+
+        <!--高级教程-->
+        <module>springboot-admin-server</module>
+        <module>springboot-admin-client</module>
+        <module>springboot-starter</module>
     </modules>
+
+    <dependencies>
+        <!-- Spring Boot web依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+
+        <!-- Spring Boot web依赖 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

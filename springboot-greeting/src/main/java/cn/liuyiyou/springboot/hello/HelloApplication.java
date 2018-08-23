@@ -18,8 +18,11 @@ public class HelloApplication {
     }
 
 
-    @RequestMapping("/hello")
+    @RequestMapping("/")
     public String sayHello() {
+        logger.info("Sample Info Message");
+        logger.debug("Sample Debug Message");
+        logger.trace("Sample Trace Message");
         return "Hello SpringBoot";
     }
 

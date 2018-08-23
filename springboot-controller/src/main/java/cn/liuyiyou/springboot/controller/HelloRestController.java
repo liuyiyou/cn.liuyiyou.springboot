@@ -1,6 +1,8 @@
 package cn.liuyiyou.springboot.controller;
 
 import cn.liuyiyou.springboot.model.User;
+import cn.liuyiyou.springboot.model.User1;
+import cn.liuyiyou.springboot.model.User2;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -12,10 +14,26 @@ import java.util.List;
 import java.util.Map;
 
 
-@RestController
+@RestController("restcontroller")
 @RequestMapping("/rest/")
 public class HelloRestController {
 
+
+    @RequestMapping("auser1")
+    public User1 user1(){
+        User1 u = new User1();
+        u.setId(1019773184273002497L);
+        u.setName("没有加注解");
+        return u;
+    }
+
+    @RequestMapping("auser2")
+    public User2 user2(){
+        User2 u = new User2();
+        u.setId(1019773184273002497L);
+        u.setName("加注释");
+        return u;
+    }
     /**
      * 返回json
      *
