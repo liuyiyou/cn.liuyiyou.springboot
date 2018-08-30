@@ -58,6 +58,12 @@
         <module>springboot-mybatis-mutil-datasource</module>
         <module>springboot-atomikos</module>
         <module>springboot-pay</module>
+        <module>springboot-mybatis-redis-annotation</module>
+        <module>springboot-security-starter</module>
+
+        <!--缓存-->
+        <module>springboot-redis</module>
+        <module>springboot-jetcache</module>
 
         <!--高级教程-->
         <module>springboot-admin-server</module>

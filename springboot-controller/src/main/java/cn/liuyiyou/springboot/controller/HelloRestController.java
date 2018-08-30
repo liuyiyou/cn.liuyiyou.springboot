@@ -18,22 +18,33 @@ import java.util.Map;
 @RequestMapping("/rest/")
 public class HelloRestController {
 
-
+    /**
+     * dd
+     *
+     * @return
+     */
     @RequestMapping("auser1")
-    public User1 user1(){
+    public User1 user1() {
         User1 u = new User1();
         u.setId(1019773184273002497L);
         u.setName("没有加注解");
         return u;
     }
 
+    /**
+     * aa
+     * dd
+     *
+     * @return
+     */
     @RequestMapping("auser2")
-    public User2 user2(){
+    public User2 user2() {
         User2 u = new User2();
         u.setId(1019773184273002497L);
         u.setName("加注释");
         return u;
     }
+
     /**
      * 返回json
      *
@@ -69,7 +80,6 @@ public class HelloRestController {
     public Map returnMap() {
         return new HashMap();
     }
-
 
 
     @RequestMapping("/user")
