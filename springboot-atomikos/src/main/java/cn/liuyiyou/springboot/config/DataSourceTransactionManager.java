@@ -1,4 +1,4 @@
-package com.ibalife.message.config;
+package cn.liuyiyou.springboot.config;
 
 /**
  * User: liuyiyou

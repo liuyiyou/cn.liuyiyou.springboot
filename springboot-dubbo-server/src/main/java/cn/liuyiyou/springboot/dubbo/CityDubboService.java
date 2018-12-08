@@ -1,6 +1,6 @@
 package cn.liuyiyou.springboot.dubbo;
 
-import cn.liuyiyou.springboot.domain.City;
+import cn.liuyiyou.springboot.entity.City;
 
 /**
  * 城市业务 Dubbo 服务层

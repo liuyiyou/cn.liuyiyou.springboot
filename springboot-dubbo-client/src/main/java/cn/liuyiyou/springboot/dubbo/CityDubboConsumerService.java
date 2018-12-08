@@ -1,6 +1,6 @@
 package cn.liuyiyou.springboot.dubbo;
 
-import cn.liuyiyou.springboot.domain.City;
+import cn.liuyiyou.springboot.entity.City;
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Component;
 

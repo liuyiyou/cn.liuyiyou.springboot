@@ -27,7 +27,6 @@
     <modules>
 
         <module>springboot-greeting</module>
-
         <module>springboot-restful</module>
         <module>springboot-freemarker</module>
         <module>springboot-validation-over-json</module>
@@ -60,41 +59,14 @@
         <module>springboot-pay</module>
         <module>springboot-mybatis-redis-annotation</module>
         <module>springboot-security-starter</module>
-
-        <!--缓存-->
+        <module>springboot-html</module>
+        <module>springboot-swagger2</module>
         <module>springboot-redis</module>
         <module>springboot-jetcache</module>
-
-        <!--高级教程-->
         <module>springboot-admin-server</module>
         <module>springboot-admin-client</module>
         <module>springboot-starter</module>
     </modules>
-
-    <dependencies>
-        <!-- Spring Boot web依赖 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-
-        <!-- Spring Boot web依赖 -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-
-    </dependencies>
 
     <build>
         <plugins>

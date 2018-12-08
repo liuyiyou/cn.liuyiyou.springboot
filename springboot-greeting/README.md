@@ -1,18 +1,17 @@
-## SpringBoot第一章
-
+## SpringBoot第二章：最简单的SpringBoot的MVC程序
+ 
 主要包含内容
 
 1. 最简单的SpringBoot的MVC程序
-2. 日志，相比与1.5.x，2.0.x的日志有一些变化:[2.0.x日志配置](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#boot-features-custom-log-levels)
+
+2. 日志，相比与1.5.x，2.0.x的日志有一些变化:
+[2.0.x日志配置](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#boot-features-custom-log-levels)
 
 ```
 #2.0.2
-logging:
-  level:
-    root: info
+logging.level.root: info
 #1.5.8    
-logging:
-  level: info
+logging.level: info
   
 ```
 3. 随机端口
@@ -23,3 +22,10 @@ server:
 ```
 
 4. auctor [参考](https://blog.csdn.net/qq_35915384/article/details/80203768)
+
+```
+  management.endpoints.web.exposure.include: "*"
+```
+
+5. 全局异常处理（引用springboot-commons) 中的```GlobalException`` 和META-INF/spring.factoies中的配置
+

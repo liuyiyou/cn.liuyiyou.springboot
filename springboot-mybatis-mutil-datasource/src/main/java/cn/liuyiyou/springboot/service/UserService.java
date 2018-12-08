@@ -1,7 +1,7 @@
 package cn.liuyiyou.springboot.service;
 
 
-import cn.liuyiyou.springboot.domain.User;
+import cn.liuyiyou.springboot.entity.User;
 
 /**
  * 用户业务接口层

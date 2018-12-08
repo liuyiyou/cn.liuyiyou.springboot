@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.liuyiyou</groupId>
-    <artifactId>ch09-spring-boot-jooq</artifactId>
+    <artifactId>springboot-jooq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -65,10 +65,6 @@
         </dependency>
     </dependencies>
 
-
-
-
-
     <build>
         <plugins>
             <plugin>
@@ -87,7 +83,7 @@
                         </goals>
                         <configuration>
                             <files>
-                                <file>src/main/resources/application.properties</file>
+                                <file>application.properties</file>
                             </files>
                         </configuration>
                     </execution>
@@ -132,10 +128,10 @@
                 </dependencies>
             </plugin>
             <!-- The jOOQ code generator plugin -->
+            <!--https://www.petrikainulainen.net/programming/jooq/using-jooq-with-spring-code-generation/-->
             <plugin>
                 <groupId>org.jooq</groupId>
                 <artifactId>jooq-codegen-maven</artifactId>
-
                 <executions>
                     <execution>
                         <id>generate-h2</id>
@@ -182,6 +178,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>

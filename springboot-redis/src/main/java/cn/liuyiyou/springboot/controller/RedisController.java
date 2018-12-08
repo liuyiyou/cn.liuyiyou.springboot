@@ -72,10 +72,10 @@ public class RedisController {
     public User getUser() {
         User user = new User();
         user.setAddress(getAddress());
-        user.setaBoolean(true);
-        user.setaInteger(1);
-        user.setaFloat(1.0F);
-        user.setaDouble(1.0D);
+        user.setABoolean(true);
+        user.setAInteger(1);
+        user.setAFloat(1.0F);
+        user.setADouble(1.0D);
         user.setDate(new Date());
         user.setList(Arrays.asList(1, 2, 3, 4));
         user.setSet(new HashSet<String>());

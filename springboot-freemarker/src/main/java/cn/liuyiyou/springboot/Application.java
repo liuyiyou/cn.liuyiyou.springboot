@@ -9,15 +9,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * <p>
  * Created by liuyiyou.cn on 16/4/26.
  */
-// Spring Boot 应用的标识
 @SpringBootApplication
-// mapper 接口类扫描包配置
-@MapperScan("cn.liuyiyou.springboot.dao")
+@MapperScan("cn.liuyiyou.springboot.mapper")
 public class Application {
 
     public static void main(String[] args) {
-        // 程序启动入口
-        // 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
         SpringApplication.run(Application.class, args);
     }
 }

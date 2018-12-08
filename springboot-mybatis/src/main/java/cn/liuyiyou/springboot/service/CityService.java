@@ -1,6 +1,6 @@
 package cn.liuyiyou.springboot.service;
 
-import cn.liuyiyou.springboot.domain.City;
+import cn.liuyiyou.springboot.entity.City;
 
 import java.util.List;
 

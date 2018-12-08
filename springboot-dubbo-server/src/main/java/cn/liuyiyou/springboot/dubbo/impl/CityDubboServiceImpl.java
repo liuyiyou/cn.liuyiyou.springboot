@@ -1,9 +1,8 @@
 package cn.liuyiyou.springboot.dubbo.impl;
 
-import cn.liuyiyou.springboot.domain.City;
+import cn.liuyiyou.springboot.entity.City;
 import cn.liuyiyou.springboot.dubbo.CityDubboService;
 import com.alibaba.dubbo.config.annotation.Service;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * 城市业务 Dubbo 服务层实现层

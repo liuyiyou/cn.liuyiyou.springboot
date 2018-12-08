@@ -31,11 +31,4 @@ public class GlobalControllerAdvisor implements ResponseBodyAdvice, Serializable
     public Object beforeBodyWrite(Object o, MethodParameter methodParameter, MediaType mediaType, Class aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
         return Result.success(o);
     }
-
-
-//    @Override
-//    public Result beforeBodyWrite(Result result, MethodParameter methodParameter, MediaType mediaType, Class<? extends HttpMessageConverter<?>> aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
-//        log.info(toJSONString(result));
-//        return null;
-//    }
 }

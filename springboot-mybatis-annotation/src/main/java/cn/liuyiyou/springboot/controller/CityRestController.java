@@ -1,5 +1,5 @@
 package cn.liuyiyou.springboot.controller;
-import cn.liuyiyou.springboot.domain.City;
+import cn.liuyiyou.springboot.entity.City;
 import cn.liuyiyou.springboot.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

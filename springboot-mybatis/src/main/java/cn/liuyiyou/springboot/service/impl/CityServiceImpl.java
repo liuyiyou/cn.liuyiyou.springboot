@@ -1,7 +1,7 @@
 package cn.liuyiyou.springboot.service.impl;
 
-import cn.liuyiyou.springboot.dao.CityDao;
-import cn.liuyiyou.springboot.domain.City;
+import cn.liuyiyou.springboot.mapper.CityDao;
+import cn.liuyiyou.springboot.entity.City;
 import cn.liuyiyou.springboot.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

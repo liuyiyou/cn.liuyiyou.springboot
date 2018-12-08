@@ -1,9 +1,7 @@
 package cn.liuyiyou.springboot.service;
 
 
-import cn.liuyiyou.springboot.domain.City;
-
-import java.util.List;
+import cn.liuyiyou.springboot.entity.City;
 
 /**
  * 城市业务逻辑接口类

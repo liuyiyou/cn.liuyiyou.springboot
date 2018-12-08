@@ -1,3 +1,9 @@
 server.port: ${random.int[10000,19999]}
 spring.application.name: spring-greeting
 logging.level.root: INFO
+
+
+management.endpoints.web.exposure.include: "*"
+
+
+spring.boot.admin.client.url: http://localhost:10001

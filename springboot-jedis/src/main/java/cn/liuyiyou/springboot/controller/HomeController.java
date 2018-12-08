@@ -19,7 +19,7 @@ public class HomeController {
 
     @RequestMapping("/")
     public String index() {
-        System.out.println("result::"+jedis.ping());
+        System.out.println("result::" + jedis.ping());
         return "index";
     }
 
