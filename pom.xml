@@ -25,7 +25,6 @@
 
 
     <modules>
-
         <module>springboot-greeting</module>
         <module>springboot-restful</module>
         <module>springboot-freemarker</module>
@@ -58,7 +57,6 @@
         <module>springboot-atomikos</module>
         <module>springboot-pay</module>
         <module>springboot-mybatis-redis-annotation</module>
-        <module>springboot-security-starter</module>
         <module>springboot-html</module>
         <module>springboot-swagger2</module>
         <module>springboot-redis</module>
@@ -66,6 +64,9 @@
         <module>springboot-admin-server</module>
         <module>springboot-admin-client</module>
         <module>springboot-starter</module>
+        <module>springboot-security-hello</module>
+        <module>springboot-dubbo-server</module>
+        <module>springboot-dubbo-client</module>
     </modules>
 
     <build>

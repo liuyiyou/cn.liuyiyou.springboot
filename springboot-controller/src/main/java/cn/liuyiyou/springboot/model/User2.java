@@ -1,12 +1,8 @@
 package cn.liuyiyou.springboot.model;
 
-import com.alibaba.fastjson.annotation.JSONField;
-import com.alibaba.fastjson.serializer.SerializerFeature;
-
-
 public class User2 {
 
-    @JSONField(serialzeFeatures = SerializerFeature.WriteNonStringKeyAsString)
+//    @JSONField(serialzeFeatures = SerializerFeature.WriteNonStringKeyAsString)
     private Long id;
     private String name;
 

@@ -31,6 +31,9 @@ public class MyUserDetailService implements UserDetailsService {
 }
 ```
 
+最后：参考的是这里的：
+https://github.com/spring-projects/spring-security/tree/5.0.7.RELEASE/samples/boot/helloworld
+
 需要加上
 ```java
     @Bean
@@ -67,3 +70,7 @@ public class MyUserDetailService implements UserDetailsService {
 }
 
 ```
+
+5. 自定义登陆页面
+
+spring security会提供一个默认的登陆页面

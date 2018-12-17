@@ -3,6 +3,7 @@ package cn.liuyiyou.springboot.controller;
 import cn.liuyiyou.springboot.model.User;
 import cn.liuyiyou.springboot.model.User1;
 import cn.liuyiyou.springboot.model.User2;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -23,7 +24,7 @@ public class HelloRestController {
      *
      * @return
      */
-    @RequestMapping("auser1")
+    @GetMapping("auser1")
     public User1 user1() {
         User1 u = new User1();
         u.setId(1019773184273002497L);
@@ -37,7 +38,7 @@ public class HelloRestController {
      *
      * @return
      */
-    @RequestMapping("auser2")
+    @GetMapping("auser2")
     public User2 user2() {
         User2 u = new User2();
         u.setId(1019773184273002497L);
@@ -50,7 +51,7 @@ public class HelloRestController {
      *
      * @return
      */
-    @RequestMapping("hello")
+    @GetMapping("hello")
     public String sayHello() {
         return "Hello,World!";
     }
@@ -61,7 +62,7 @@ public class HelloRestController {
      *
      * @return
      */
-    @RequestMapping({"/returnTemplateDefault"})
+    @GetMapping({"/returnTemplateDefault"})
     public ModelAndView returnTemplateDefault() {
         return new ModelAndView();
     }
@@ -71,18 +72,18 @@ public class HelloRestController {
      *
      * @return
      */
-    @RequestMapping({"/returnTemplate"})
+    @GetMapping({"/returnTemplate"})
     public ModelAndView returnTemplate() {
         return new ModelAndView("hello1");
     }
 
-    @RequestMapping({"/returnMap"})
+    @GetMapping({"/returnMap"})
     public Map returnMap() {
         return new HashMap();
     }
 
 
-    @RequestMapping("/user")
+    @GetMapping("/user")
     public User getUser() {
         return new User() {{
             setName("中文");
@@ -92,7 +93,7 @@ public class HelloRestController {
     }
 
 
-    @RequestMapping("/userlist")
+    @GetMapping("/userlist")
     public List<User> getUserList() {
         return userList();
     }
