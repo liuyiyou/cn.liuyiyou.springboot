@@ -67,6 +67,8 @@
         <module>springboot-security-hello</module>
         <module>springboot-dubbo-server</module>
         <module>springboot-dubbo-client</module>
+
+        <module>springboot-fastjson</module>
     </modules>
 
     <build>
