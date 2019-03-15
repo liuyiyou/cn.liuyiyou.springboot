@@ -1,5 +1,6 @@
 package cn.liuyiyou.springboot.controller;
 
+import cn.liuyiyou.springboot.entity.User;
 import cn.liuyiyou.springboot.exception.NormalExceptionHandler;
 import cn.liuyiyou.springboot.result.Result;
 import cn.liuyiyou.springboot.result.ResultGenerator;
@@ -23,6 +24,14 @@ public class ExceptionController {
     }
 
 
+    @RequestMapping("/npe")
+    public Result npe()  {
+        String city = new User().getAddress().getCity();
+        System.out.println(new User().getAddress().getCity());
+        return ResultGenerator.genSuccessResult(city);
+    }
+
+
     @RequestMapping("/div")
     public Result sayHello() throws Exception {
         log.info("div.......");
@@ -32,11 +41,9 @@ public class ExceptionController {
 
     @RequestMapping("/normal")
     @ExceptionHandler(NormalExceptionHandler.class)
-    public Result normalException (){
-        throw  new NormalExceptionHandler("普通异常");
+    public Result normalException() {
+        throw new NormalExceptionHandler("普通异常");
     }
-
-
 
 
 }
