@@ -23,6 +23,7 @@ public class TransactionServiceImpl implements TransactionService {
     public void addAll() {
         City city = getCity();
         cityService.addCity(city);
+        int  i = 1/0;
         User user = getUser();
         userService.addUser(user);
     }

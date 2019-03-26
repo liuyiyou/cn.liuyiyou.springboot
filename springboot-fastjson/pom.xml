@@ -8,6 +8,7 @@
         <version>2.0.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>cn.liuyiyou.springboot</groupId>
     <artifactId>springboot-fastjson</artifactId>
     <version>0.0.1-SNAPSHOT</version>
