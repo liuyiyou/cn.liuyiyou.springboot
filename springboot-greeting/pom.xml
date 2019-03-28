@@ -34,21 +34,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <!--springboot admin-->
-        <dependency>
-            <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-starter-client</artifactId>
-            <version>2.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-starter-server</artifactId>
-            <version>2.0.2</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-actuator</artifactId>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash;springboot admin&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>de.codecentric</groupId>-->
+            <!--<artifactId>spring-boot-admin-starter-client</artifactId>-->
+            <!--<version>2.0.2</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>de.codecentric</groupId>-->
+            <!--<artifactId>spring-boot-admin-starter-server</artifactId>-->
+            <!--<version>2.0.2</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
