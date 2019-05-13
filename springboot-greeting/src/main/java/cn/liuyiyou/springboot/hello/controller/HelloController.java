@@ -1,128 +1,72 @@
-package cn.liuyiyou.springboot.hello.controller;
-
-import com.alibaba.fastjson.JSONObject;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
-
-import javax.annotation.PostConstruct;
-
-/**
- * @author: liuyiyou.cn
- * @date: 2018/12/7
- * @version: V1.0
- */
-@Slf4j
-@RestController
-public class HelloController {
-    @Autowired
-    private RestTemplate restTemplate;
-
-
-    @PostConstruct
-    public void logSomething() {
-        log.info("Sample Info Message");
-        log.debug("Sample Debug Message");
-        log.trace("Sample Trace Message");
-    }
-
-    @GetMapping("/")
-    public String sayHello() {
-        log.info("Sample Info Message");
-        log.debug("Sample Debug Message");
-        log.trace("Sample Trace Message");
-        return "Hello SpringBoot";
-    }
-
-    @GetMapping("/exception")
-    public String testException() {
-        int i = 1 / 0;
-        return "success";
-    }
-
-    @PostMapping("/login")
-    @ResponseBody
-    public String test(@RequestBody User user) {
-
-//        Message message = new Message();
-//        message.setCode(200);
-//        message.setMsg("success");
-//        message.setSuccess(true);
-        HttpHeaders headers = new HttpHeaders();
-        MediaType type = MediaType.parseMediaType("application/json; charset=UTF-8");
-        headers.setContentType(type);
-        headers.add("Accept", MediaType.APPLICATION_JSON.toString());
-        JSONObject jsonObj = new JSONObject();
-        jsonObj.put("username", user.getUsername());
-        jsonObj.put("password", user.getPassword());
-        HttpEntity<String> formEntity = new HttpEntity(jsonObj.toString(), headers);
-        String s = restTemplate.postForEntity("http://localhost:8080/login", formEntity, String.class).getBody();
-        return s;
-//        MultiValueMap<String, String> map= new LinkedMultiValueMap<String, String>();
-//        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-//        map.add("username","admin");
-//        map.add("password","admin123");
-//        HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(map, headers);
-//        ResponseEntity<String> stringResponseEntity = restTemplate.postForEntity("http://localhost:8080/login", map, String.class);
-//        return stringResponseEntity.getBody();
-    }
-}
-
-class Message {
-    private int code;
-    private String msg;
-    private boolean success;
-
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
-
-    public boolean isSuccess() {
-        return success;
-    }
-
-    public void setSuccess(boolean success) {
-        this.success = success;
-    }
-}
-
-class User {
-    private String username;
-    private String password;
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-}
+//package cn.liuyiyou.springboot.hello.controller;
+//
+//import cn.liuyiyou.springboot.hello.HelloApplication;
+//import lombok.Data;
+//import lombok.extern.slf4j.Slf4j;
+//import org.springframework.context.ApplicationContext;
+//import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.RestController;
+//import org.springframework.web.method.HandlerMethod;
+//import org.springframework.web.servlet.HandlerMapping;
+//import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
+//import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
+//
+//import javax.annotation.PostConstruct;
+//import java.util.Arrays;
+//import java.util.Map;
+//import java.util.function.BiConsumer;
+//
+///**
+// * @author: liuyiyou.cn
+// * @date: 2018/12/7
+// * @version: V1.0
+// */
+//@Slf4j
+//@RestController
+//public class HelloController {
+//
+//
+//
+//    @PostConstruct
+//    public void logSomething() {
+//        log.info("Sample Info Message");
+//        log.debug("Sample Debug Message");
+//        log.trace("Sample Trace Message");
+//    }
+//
+//    @GetMapping("/")
+//    public String sayHello() {
+//        RequestMappingHandlerMapping bean = HelloApplication.applicationContext.getBean(RequestMappingHandlerMapping.class);
+//        Map<RequestMappingInfo, HandlerMethod> handlerMethods = bean.getHandlerMethods();
+//        handlerMethods.forEach((requestMappingInfo, handlerMethod) -> {
+//            System.out.println(requestMappingInfo.getName());
+//            System.out.println(handlerMethod.getMethod().getName());
+//        });
+//        Arrays.asList(bean).forEach(System.out::println);
+//        log.info("Sample Info Message");
+//        log.debug("Sample Debug Message");
+//        log.trace("Sample Trace Message");
+//        return "Hello SpringBoot";
+//    }
+//
+//
+//    @GetMapping("user")
+//    public User user() {
+//       User user = new User();
+//       user.setId(1);
+//       user.setName(null);
+//       return user;
+//    }
+//
+//    @GetMapping("/exception")
+//    public String testException() {
+//        int i = 1 / 0;
+//        return "success";
+//    }
+//}
+//
+//@Data
+//class User{
+//    private Integer id;
+//    private String name;
+//}

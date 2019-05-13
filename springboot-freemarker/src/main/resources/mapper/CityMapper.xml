@@ -27,6 +27,7 @@
 		from city
 	</select>
 
+
 	<insert id="saveCity" parameterMap="City" useGeneratedKeys="true" keyProperty="id">
 		insert into
 			city(id,province_id,city_name,description)
