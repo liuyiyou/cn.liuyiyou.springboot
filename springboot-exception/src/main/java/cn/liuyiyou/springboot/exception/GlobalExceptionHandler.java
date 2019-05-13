@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletRequest;
  */
 
 @RestControllerAdvice
-//@RestController
 @Log
 public class GlobalExceptionHandler {
 
@@ -29,12 +28,6 @@ public class GlobalExceptionHandler {
         }
         return ResultGenerator.genBadReqResult(e.getMessage());
     }
-
-//    @ExceptionHandler(NormalExceptionHandler.class)
-//    public Result normalException(HttpServletRequest req, Exception e) throws Exception {
-//        log.info("普通异常:"+e.getMessage());
-//        return ResultGenerator.genBadReqResult(e.getMessage());
-//    }
 
 
 

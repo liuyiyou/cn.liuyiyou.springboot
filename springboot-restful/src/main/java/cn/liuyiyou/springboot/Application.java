@@ -1,9 +1,10 @@
 package cn.liuyiyou.springboot;
 
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * Spring Boot 应用启动类
@@ -21,4 +22,6 @@ public class Application {
         // 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
         SpringApplication.run(Application.class,args);
     }
+
+
 }

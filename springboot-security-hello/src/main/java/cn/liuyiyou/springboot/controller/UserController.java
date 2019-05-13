@@ -1,5 +1,6 @@
 package cn.liuyiyou.springboot.controller;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +25,8 @@ public class UserController {
         return "index";
     }
 
+    //    @Secured({"admin"})
+    @PreAuthorize("hasAuthority('admin')")
     @RequestMapping("/user/index")
     public String userIndex() {
         return "user/index";
