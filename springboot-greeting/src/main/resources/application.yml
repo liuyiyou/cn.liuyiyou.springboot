@@ -1,9 +1,11 @@
-server.port: ${random.int[10000,19999]}
+#server.port: ${random.int[10000,19999]}
 spring.application.name: spring-greeting
-logging.level.root: INFO
+logging.level.root: debug
 
 
-management.endpoints.web.exposure.include: "*"
+#management.endpoints.web.exposure.include: "*"
 
 
 spring.boot.admin.client.url: http://localhost:10001
+server:
+  port: 8081
