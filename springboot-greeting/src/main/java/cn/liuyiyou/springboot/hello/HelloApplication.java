@@ -20,7 +20,8 @@ public class HelloApplication {
 
     public static void main(String[] args) {
         applicationContext = SpringApplication.run(HelloApplication.class, args);
-        printlnBeanNames();
+        Map<String, Object> beansWithAnnotation = applicationContext.getBeansWithAnnotation(RestController.class);
+//        printlnBeanNames();
     }
 
     private static void printlnBeanNames() {
