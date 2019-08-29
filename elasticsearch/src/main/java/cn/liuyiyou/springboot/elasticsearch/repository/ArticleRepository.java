@@ -1,8 +1,7 @@
 package cn.liuyiyou.springboot.elasticsearch.repository;
 
-import cn.liuyiyou.springboot.elasticsearch.domain.article.Article;
+import cn.liuyiyou.springboot.elasticsearch.domain.Article;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
-import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
