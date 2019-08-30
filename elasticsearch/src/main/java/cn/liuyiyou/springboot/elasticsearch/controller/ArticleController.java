@@ -34,11 +34,9 @@ public class ArticleController {
     }
 
 
-    @GetMapping("/page/{page}-{pageSize}")
-    public Page<Article> page(@PathVariable("page") int page,
-                              @PathVariable("pageSize") int pageSize,
-                              @RequestParam(value = "q", required = false) String q) {
-        Pageable pageable = PageRequest.of(page, pageSize);
+    @GetMapping("/page")
+    public Page<Article> page(
+            @RequestParam(value = "q", required = false) String q, Pageable pageable) {
         if (StringUtils.isNoneEmpty(q)) {
             ExampleMatcher matcher = ExampleMatcher.matching() //构建对象
                     .withMatcher("title", ExampleMatcher.GenericPropertyMatchers.startsWith());//姓名采用“开始匹配”的方式查询
