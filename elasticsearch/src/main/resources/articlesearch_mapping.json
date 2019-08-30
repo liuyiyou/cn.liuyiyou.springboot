@@ -1,0 +1,81 @@
+{
+  "search_article_type": {
+    "properties": {
+      "id": {
+        "type": "long",
+        "index": "not_analyzed"
+      },
+      "title": {
+        "type": "text",
+        "index": "analyzed",
+        "analyzer": "ikIndexAnalyzer",
+        "fields": {
+          "SPY": {
+            "type": "text",
+            "index": "analyzed",
+            "analyzer": "pinyinSimpleIndexAnalyzer"
+          },
+          "FPY": {
+            "type": "text",
+            "index": "analyzed",
+            "analyzer": "pinyinFullIndexAnalyzer"
+          }
+        }
+      },
+      "thumbnailPics": {
+        "type": "text",
+        "fielddata": true
+      },
+      "summary": {
+        "type": "text",
+        "index": "analyzed",
+        "analyzer": "ikIndexAnalyzer",
+        "fields": {
+          "SPY": {
+            "type": "text",
+            "index": "analyzed",
+            "analyzer": "pinyinSimpleIndexAnalyzer"
+          },
+          "FPY": {
+            "type": "text",
+            "index": "analyzed",
+            "analyzer": "pinyinFullIndexAnalyzer"
+          }
+        }
+      },
+      "readNum": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "commentNum": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "praiseNum": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "statusTime": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+      },
+      "content": {
+        "type": "text",
+        "index": "analyzed",
+        "analyzer": "ikIndexAnalyzer",
+        "fields": {
+          "SPY": {
+            "type": "text",
+            "index": "analyzed",
+            "analyzer": "pinyinSimpleIndexAnalyzer"
+          },
+          "FPY": {
+            "type": "text",
+            "index": "analyzed",
+            "analyzer": "pinyinFullIndexAnalyzer"
+          }
+        }
+      }
+    }
+  }
+}
