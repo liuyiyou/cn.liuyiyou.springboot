@@ -23,7 +23,7 @@ import java.io.Serializable;
 @Setting(settingPath = "common_index_setting.json")
 @NoArgsConstructor
 @AllArgsConstructor
-public class ArticleSearch implements Serializable {
+public class ArticleSearch implements Serializable, Cloneable {
 
     @Id
     private Long id;
@@ -33,4 +33,8 @@ public class ArticleSearch implements Serializable {
     private String thumbnailPics;
     private String statusTime;
 
+    @Override
+    public ArticleSearch clone() {
+        return new ArticleSearch();
+    }
 }

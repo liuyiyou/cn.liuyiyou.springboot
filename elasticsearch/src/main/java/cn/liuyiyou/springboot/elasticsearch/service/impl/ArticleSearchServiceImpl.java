@@ -63,10 +63,11 @@ public class ArticleSearchServiceImpl implements IArticleSearchService {
     @Override
     public boolean initArticleData() {
         List<IndexQuery> indexQueries = new ArrayList<>();
+        final ArticleSearch articleSearch = new ArticleSearch();
         articleRepository.findAll().forEach(article -> {
-            final ArticleSearch articleSearch = new ArticleSearch();
-            BeanUtils.copyProperties(article, articleSearch);
-            IndexQuery indexQuery = new IndexQueryBuilder().withId(articleSearch.getId().toString()).withObject(articleSearch).build();
+            final ArticleSearch clone = articleSearch.clone();
+            BeanUtils.copyProperties(article, clone);
+            IndexQuery indexQuery = new IndexQueryBuilder().withId(clone.getId().toString()).withObject(clone).build();
             indexQueries.add(indexQuery);
         });
         elasticsearchTemplate.bulkIndex(indexQueries);

@@ -46,7 +46,7 @@ public class ArticleSearchController {
         return Response.ok(articleSearchService.initArticleMapping());
     }
 
-    @PostMapping("/init/data")
+    @GetMapping("/init/data")
     public Response initProdData() {
         return Response.ok(articleSearchService.initArticleData());
     }
