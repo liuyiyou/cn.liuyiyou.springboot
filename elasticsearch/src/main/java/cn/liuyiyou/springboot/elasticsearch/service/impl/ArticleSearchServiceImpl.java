@@ -11,12 +11,8 @@ import cn.liuyiyou.springboot.elasticsearch.vo.ArticleQueryVo;
 import io.searchbox.client.JestClient;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.index.query.BoolQueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
-import org.elasticsearch.index.query.QueryStringQueryBuilder;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 import org.springframework.data.elasticsearch.core.query.IndexQueryBuilder;
@@ -26,8 +22,6 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-import static cn.liuyiyou.springboot.elasticsearch.constant.SearchArticleConstans.ARTICLE_FIELD_CONTENT;
-import static cn.liuyiyou.springboot.elasticsearch.constant.SearchArticleConstans.ARTICLE_FIELD_SUMMARY;
 import static cn.liuyiyou.springboot.elasticsearch.constant.SearchArticleConstans.ARTICLE_FIELD_TITLE;
 import static cn.liuyiyou.springboot.elasticsearch.constant.SearchArticleConstans.SEARCH_ARTICLE_TYPE;
 import static cn.liuyiyou.springboot.elasticsearch.service.SearchUtil.constructSearchArticleConditionQueryBuilder;
@@ -86,21 +80,22 @@ public class ArticleSearchServiceImpl implements IArticleSearchService {
                 .must(multiMatchQuery("测试文章", ARTICLE_FIELD_TITLE)//, ARTICLE_FIELD_SUMMARY, ARTICLE_FIELD_CONTENT)
                 ).minimumShouldMatch("100%");
         NativeSearchQuery query = new NativeSearchQuery(keywordBuilder);
-        return elasticsearchTemplate.queryForList(query, ArticleSearch.class);
+        return elasticsearchTemplate.queryForList(query, ArticleSearch.class); //queryForPage
     }
 
     //    @Autowired
 //    private ElasticsearchTemplate template;
 
     @Override
-    public Page<ArticleSearch> searchArticlePage(ArticleQueryVo articleQueryVo) {
-//        final BoolQueryBuilder builder = constructSearchArticleConditionQueryBuilder(articleQueryVo);
-        final QueryStringQueryBuilder builder = QueryBuilders.queryStringQuery(articleQueryVo.getKeyWord());
-        final BoolQueryBuilder should = QueryBuilders.boolQuery().must(builder).minimumShouldMatch(100);
-        log.info(should.toString());
-        final Page<ArticleSearch> articles = articleSearchRepository.search(should, PageRequest.of(articleQueryVo.getPage(), articleQueryVo.getPageSize()));
-//        final Page<Article> articles = articleSearchRepository.findByJpa(articleQueryVo.getKeyWord(), PageRequest.of(articleQueryVo.getPage(), articleQueryVo.getPageSize()));
-        return articles;
+    public List<ArticleSearch> searchArticlePage(ArticleQueryVo articleQueryVo) {
+        BoolQueryBuilder keywordBuilder = boolQuery();
+        keywordBuilder
+                .must(multiMatchQuery(articleQueryVo.getKeyWord(), ARTICLE_FIELD_TITLE)//, ARTICLE_FIELD_SUMMARY, ARTICLE_FIELD_CONTENT)
+                ).minimumShouldMatch("100%");
+        NativeSearchQuery query = new NativeSearchQuery(keywordBuilder);
+        List<ArticleSearch> articleSearches = new ArrayList<>();
+        articleSearchRepository.search(query.getQuery()).forEach(articleSearches::add);
+        return articleSearches;
     }
 
 

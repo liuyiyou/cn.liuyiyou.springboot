@@ -8,7 +8,6 @@ import cn.liuyiyou.springboot.elasticsearch.service.IArticleService;
 import cn.liuyiyou.springboot.elasticsearch.vo.ArticleQueryVo;
 import cn.liuyiyou.springboot.elasticsearch.vo.Response;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -65,8 +64,8 @@ public class ArticleSearchController {
     }
 
     @PostMapping("/query/jpa")
-    public Page<ArticleSearch> searchByKeyword(@RequestBody ArticleQueryVo articleQueryVo) {
-        final Page<ArticleSearch> articles = articleSearchService.searchArticlePage(articleQueryVo);
+    public List<ArticleSearch> searchByKeyword(@RequestBody ArticleQueryVo articleQueryVo) {
+        final List<ArticleSearch> articles = articleSearchService.searchArticlePage(articleQueryVo);
         return articles;
     }
 

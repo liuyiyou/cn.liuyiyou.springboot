@@ -3,7 +3,6 @@ package cn.liuyiyou.springboot.elasticsearch.service;
 import cn.liuyiyou.springboot.elasticsearch.domain.ArticleSearch;
 import cn.liuyiyou.springboot.elasticsearch.result.SearchEngineResult;
 import cn.liuyiyou.springboot.elasticsearch.vo.ArticleQueryVo;
-import org.springframework.data.domain.Page;
 
 import java.util.List;
 
@@ -17,7 +16,7 @@ public interface IArticleSearchService {
 
     List<ArticleSearch> searchArticle(String title);
 
-    Page<ArticleSearch> searchArticlePage(ArticleQueryVo articleQueryVo);
+
 
     SearchEngineResult searchArticleByJest(ArticleQueryVo articleQueryVo);
 
@@ -26,4 +25,6 @@ public interface IArticleSearchService {
     boolean initArticleData();
 
     List<ArticleSearch> search();
+
+    List<ArticleSearch> searchArticlePage(ArticleQueryVo articleQueryVo);
 }
