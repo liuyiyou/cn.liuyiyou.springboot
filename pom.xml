@@ -25,6 +25,7 @@
 
 
     <modules>
+        <module>springboot-hello</module>
         <module>springboot-greeting</module>
         <module>springboot-restful</module>
         <module>springboot-freemarker</module>
@@ -67,8 +68,11 @@
         <module>springboot-security-hello</module>
         <module>springboot-dubbo-server</module>
         <module>springboot-dubbo-client</module>
-
         <module>springboot-fastjson</module>
+
+        <module>lyy-autoconfigure</module>
+        <module>lyy-starter</module>
+        <module>lyy-app</module>
     </modules>
 
     <build>
