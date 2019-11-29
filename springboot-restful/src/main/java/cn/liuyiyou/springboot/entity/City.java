@@ -1,10 +1,15 @@
 package cn.liuyiyou.springboot.entity;
 
+import lombok.Data;
+import lombok.experimental.Accessors;
+
 /**
  * 城市实体类
- *
+ * <p>
  * Created by liuyiyou.cn on 07/02/2017.
  */
+@Data
+@Accessors(fluent = true)
 public class City {
 
     /**
@@ -22,40 +27,4 @@ public class City {
      */
     private String cityName;
 
-    /**
-     * 描述
-     */
-    private String description;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getProvinceId() {
-        return provinceId;
-    }
-
-    public void setProvinceId(Long provinceId) {
-        this.provinceId = provinceId;
-    }
-
-    public String getCityName() {
-        return cityName;
-    }
-
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 }

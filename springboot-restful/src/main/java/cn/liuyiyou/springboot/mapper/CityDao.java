@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 城市 DAO 接口类
- *
+ * <p>
  * Created by liuyiyou.cn on 07/02/2017.
  */
 public interface CityDao {
@@ -32,4 +32,5 @@ public interface CityDao {
     Long updateCity(City city);
 
     Long deleteCity(Long id);
+
 }
