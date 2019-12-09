@@ -3,6 +3,8 @@ package cn.liuyiyou.springboot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.ParameterBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -23,12 +25,18 @@ import java.util.List;
  */
 // Spring Boot 应用的标识
 @SpringBootApplication
+@RestController
 public class Application {
 
     public static void main(String[] args) {
         // 程序启动入口
         // 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
         SpringApplication.run(Application.class, args);
+    }
+
+    @RequestMapping("/")
+    public String home(){
+        return "SpringBoot 校验";
     }
 
     @Bean
