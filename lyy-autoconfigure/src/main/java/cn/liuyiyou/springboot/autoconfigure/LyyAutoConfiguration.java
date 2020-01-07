@@ -16,11 +16,11 @@ import javax.annotation.PostConstruct;
 public class LyyAutoConfiguration {
 
     @Autowired
-    private LyyProperties hornetQProperties;
+    private LyyProperties lyyProperties;
 
     @PostConstruct
     public void sys(){
-        System.out.println(hornetQProperties.getName());
-        System.out.println(hornetQProperties.getAge());
+        System.out.println(lyyProperties.getName());
+        System.out.println(lyyProperties.getAge());
     }
 }

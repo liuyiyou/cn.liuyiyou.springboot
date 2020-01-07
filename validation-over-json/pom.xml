@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.liuyiyou.springboot</groupId>
-    <artifactId>springboot-validation-over-json</artifactId>
+    <artifactId>validation-over-json</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-validation-over-json :: Validation with http over json Demo</name>
+    <name>validation-over-json :: Validation with http over json Demo</name>
 
     <!-- Spring Boot 启动父依赖 -->
     <parent>

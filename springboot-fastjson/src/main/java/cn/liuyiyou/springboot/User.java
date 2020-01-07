@@ -19,6 +19,12 @@ import java.util.Set;
 @Accessors(chain = true)
 public class User {
 
+    public static void main(String[] args) {
+        final RefundResultGsonVo refundResultGsonVo = new RefundResultGsonVo();
+        System.out.println(refundResultGsonVo.getReturnCode());
+
+    }
+
     @JSONField(serializeUsing = OssPathSerializer.class)
     private String path;
 

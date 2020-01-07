@@ -29,7 +29,7 @@
         <module>springboot-greeting</module>
         <module>springboot-restful</module>
         <module>springboot-freemarker</module>
-        <module>springboot-validation-over-json</module>
+        <module>validation-over-json</module>
         <module>springboot-mybatis-mutil-datasource</module>
         <module>springboot-mybatis-redis</module>
         <module>springboot-atomikos</module>
@@ -49,7 +49,7 @@
         <module>springboot-redis</module>
         <module>springboot-rabbitmq</module>
         <module>springboot-aspect</module>
-        <module>springboot-exception</module>
+        <module>exception-handler</module>
         <module>springboot-mybatis</module>
         <module>springboot-pay</module>
         <module>springboot-dubbo-server</module>
